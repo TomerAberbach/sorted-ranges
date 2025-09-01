@@ -1,8 +1,8 @@
 import { expect } from 'vitest'
 import { fc, test } from '@fast-check/vitest'
 import { all, any, filter, map, pipe, rangeTo, reduce, toMap, toSet } from 'lfi'
-import { SortedRangeMap, SortedRangeSet } from '../src/index.ts'
-import type { Range, RangeEntry } from '../src/index.ts'
+import { SortedRangeMap, SortedRangeSet } from './index.ts'
+import type { Range, RangeEntry } from './index.ts'
 
 const indexArb = fc.integer({ min: -250, max: 250 })
 const keyArb = fc.integer({ min: -100, max: 100 })
